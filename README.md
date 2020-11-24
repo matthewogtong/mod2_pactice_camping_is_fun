@@ -1,16 +1,18 @@
 ## The Domain
 Congratulations! You have been hired by Access Camp and for your first job, you have been tasked with building out a website to log campers with their activities.
 
-A `camper` can participate in many `activities` and an `activity` can have many `campers` participating in it.
+A `camper` can participate in many `activities` and an `activity` can have many `campers` participating in it.  
+
+Activity >-- Signup --< Camper 
 
 Visiting `/campers` will show the index page of all the campers and visiting `/activities` will go to the index page for all the `activities`.
 Currently, we don't have any way to associate the two, so consider the relationship and think about how a `camper` can `signup` for an `activity`!
 
 ## The Deliverables
 
-1. To log a camper with an activity, we need to store some additional information in our database. Make the necessary updates to our database, so that **a `camper` can have many `activities`** and **an `activity` can have many campers**. The `signup` should also include a time (as an integer) that is between 0 and 23, referring to the hour of the activity.
+1. To log a camper with an activity, we need to store some additional information in our database. Make the necessary updates to our database, so that **a `camper` can have many `activities`** and **an `activity` can have many campers**. The `signup` should also include a time (as an integer) that is between 0 and 23, referring to the hour of the activity. ++
 
-2. As a user, I should be able to go to the index page of the `campers` and click on the names to go to the show page for that `camper`. The show page should show the `camper's` name, their age and the list of activities that they have signed up for.
+2. As a user, I should be able to go to the index page of the `campers` and click on the names to go to the show page for that `camper`. The show page should show the `camper's` name, their age and the list of activities that they have signed up for. ++
 
 3. As a user, I should be able to go to the index page of the `activities` and click on the name of the activity to go to the show page for that `activity`. The show page should show the `activity's` name and its difficulty level.
 
